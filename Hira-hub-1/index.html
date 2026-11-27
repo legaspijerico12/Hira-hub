@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HiraHub | Student Sharing Platform</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEAD & NAV  -->
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="HiraHub Icon" class="logo-img">
+                <span>Hira<span class="logo-blue">Hub</span></span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="browse.html">Browse</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="dashboard.html">My Dashboard</a></li>
+            </ul>
+
+            <div class="nav-actions">
+              <form class="search-bar nav-search" action="#" method="get">
+                  <input
+                      type="search"
+                      name="search"
+                      placeholder="Search calculators, books..."
+                  >
+                  <button type="submit">⌕</button>
+              </form>
+
+            <label class="theme-switch" for="themeToggle" aria-label="Toggle dark mode">
+                  <input type="checkbox" id="themeToggle">
+                  <span class="slider">
+                      <svg class="moon-icon" viewBox="0 0 24 24" fill="currentColor">
+                          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                      </svg>
+                  </span>
+              </label>
+
+              <a href="login.html" class="sign-in-button">
+                  Sign In
+              </a>
+          </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero -->
+        <section class="hero container" id="home">
+
+            <div class="hero-content">
+
+                <h1>
+                    Need something<br>
+                    for <span>school?</span>
+                </h1>
+
+                <p class="hero-description">
+                    Borrow, share, or find the school supplies you need.
+                    All in one student-friendly hub.
+                </p>
+
+                <!-- HERO BUTTONS -->
+                <div class="hero-buttons">
+
+                    <a href="browse.html" class="button button-primary">
+                        Explore Materials →
+                    </a>
+
+                    <a href="services.html" class="button button-outline">
+                        Browse Services
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- HERO ILLUSTRATION -->
+            <div class="hero-art">
+
+                <div class="art-circle"></div>
+
+                <div class="art-card art-calculator">▦</div>
+                <div class="art-card art-book">▤</div>
+                <div class="art-card art-printer">▣</div>
+                <div class="art-card art-notes">▤</div>
+
+                <div class="laptop">
+
+                    <div class="laptop-screen">
+                        <span>🎓</span>
+                    </div>
+
+                    <div class="laptop-keyboard"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Explore Categories -->
+        <section class="section container" id="browse">
+
+            <div class="section-heading">
+                <h2>Explore Categories</h2>
+                <span class="heading-line"></span>
+            </div>
+
+            <div class="category-grid">
+
+                <a href="#materials" class="category-card">
+                    <span class="category-icon">▦</span>
+                    <span>Calculators</span>
+                </a>
+
+                <a href="#materials" class="category-card">
+                    <span class="category-icon">▤</span>
+                    <span>Books</span>
+                </a>
+
+                <a href="#materials" class="category-card">
+                    <span class="category-icon">✎</span>
+                    <span>Supplies</span>
+                </a>
+
+                <a href="#materials" class="category-card">
+                    <span class="category-icon">▣</span>
+                    <span>Notes</span>
+                </a>
+
+                <a href="#materials" class="category-card">
+                    <span class="category-icon">•••</span>
+                    <span>More →</span>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- Popular Materials -->
+        <section class="section container" id="materials">
+
+            <div class="section-heading">
+                <h2>Popular Materials</h2>
+                <span class="heading-line"></span>
+            </div>
+
+            <div class="content-grid">
+
+                <!-- Calculator Card -->
+                <article class="material-card">
+
+                    <div class="product-image calculator-image">
+                        ▦
+                    </div>
+
+                    <div class="material-info">
+
+                        <h3>Scientific Calculator</h3>
+
+                        <p>Available to borrow</p>
+
+                        <span class="availability">
+                            ✓ Available
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Notebook Card -->
+                <article class="material-card">
+
+                    <div class="product-image notebook-image">
+                        ▤
+                    </div>
+
+                    <div class="material-info">
+
+                        <h3>Notebook Set</h3>
+
+                        <p>Shared by students</p>
+
+                        <span class="availability">
+                            ✓ Available
+                        </span>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Printing Services -->
+        <section class="section container" id="services">
+
+            <article class="service-banner">
+
+                <div class="printer-icon">
+                    ▣
+                </div>
+
+                <div class="service-text">
+
+                    <h2>Printing Services</h2>
+
+                    <p>Need your school documents printed?</p>
+
+                    <p>Submit your files and request a printing service.</p>
+
+                    <a href="login.html" class="button button-dark">
+                        Request a Print →
+                    </a>
+
+                </div>
+
+                <div class="paper-art">
+                    ▤
+                </div>
+
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <p>© 2026 HiraHub. All rights reserved.</p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- FLOATING ASSISTANT BUTTON -->
+    <a href="#assistant" class="assistant-button">
+        🤖
+    </a>
+
+
+    <!-- ASSISTANT BOX -->
+    <aside class="assistant-box" id="assistant">
+
+        <div class="assistant-header">
+
+            <span>🤖</span>
+
+            <strong>Hirmes</strong>
+
+            <a href="#home">×</a>
+
+        </div>
+
+
+        <div class="assistant-body">
+
+            <p>Hi! 👋 How can I help you today?</p>
+
+            <p>You can ask about:</p>
+
+            <ul>
+                <li>Borrowing or sharing materials</li>
+                <li>Printing services</li>
+                <li>Website features</li>
+            </ul>
+
+            <p class="assistant-time">5:17 PM</p>
+
+            <div class="suggestion-list">
+
+                <span>How to borrow?</span>
+                <span>Printing services</span>
+                <span>Categories</span>
+
+            </div>
+
+        </div>
+
+
+        <div class="assistant-input">
+
+            <input
+                type="text"
+                placeholder="Type a message..."
+            >
+
+            <button type="button">➤</button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
