@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    <!-- HEADER -->
+    <!-- header & navbar -->
     <header class="header">
         <nav class="navbar container">
 
@@ -36,7 +36,7 @@
                     <button type="submit">⌕</button>
                 </form>
 
-                <!-- POPUP TRIGGER BUTTONS -->
+                <!-- post & request buttons -->
                 <a href="#share-popup" class="post-material-btn">
                     + Post
                 </a>
@@ -45,6 +45,7 @@
                     + Request
                 </a>
 
+                <!-- dark mode toggle -->
                 <label class="theme-switch" for="themeToggle" aria-label="Toggle dark mode">
                     <input type="checkbox" id="themeToggle">
                     <span class="slider">
@@ -62,13 +63,11 @@
         </nav>
     </header>
 
-
-    <!-- BROWSE PAGE -->
+<!-- main content -->
     <main>
 
         <section class="section container" id="browse">
 
-            <!-- PAGE HEADER -->
             <div class="section-heading">
                 <h2>Browse Materials</h2>
                 <span class="heading-line"></span>
@@ -78,8 +77,7 @@
                 Find school materials shared by other students, or post and request what you need.
             </p>
 
-
-            <!-- CATEGORIES -->
+<!-- category filters -->
             <div class="section-heading">
                 <h2>Categories</h2>
                 <span class="heading-line"></span>
@@ -114,8 +112,7 @@
 
             </div>
 
-
-            <!-- AVAILABLE MATERIALS (STARTS EMPTY UNTIL POSTED) -->
+<!-- shared items grid -->
             <div class="section-heading" style="margin-top: 28px;">
                 <h2>Available Materials</h2>
                 <span class="heading-line"></span>
@@ -127,8 +124,7 @@
 
             <div class="content-grid" id="materialsGrid"></div>
 
-
-            <!-- STUDENT REQUESTS (STARTS EMPTY UNTIL REQUESTED) -->
+<!-- requested items grid -->
             <div class="section-heading" style="margin-top: 32px;">
                 <h2>Student Requests</h2>
                 <span class="heading-line"></span>
@@ -140,7 +136,7 @@
 
             <div class="content-grid" id="requestsGrid"></div>
 
-                        <!-- POST MATERIAL POPUP -->
+<!-- share material popup -->
             <div class="popup-overlay" id="share-popup">
                 <div class="form-card popup-box">
                     <div class="section-heading popup-top">
@@ -180,7 +176,7 @@
 
                         <div class="form-group">
                             <label for="contactLink">Messenger or Instagram Link *</label>
-                            <input type="url" id="contactLink" placeholder="e.g., https://m.me or https://instagram.com" required>
+                            <input type="url" id="contactLink" placeholder="e.g., https://m.me" required>
                         </div>
 
                         <div class="form-group">
@@ -195,8 +191,7 @@
                 </div>
             </div>
 
-
-            <!-- REQUEST MATERIAL POPUP -->
+<!-- request material popup -->
             <div class="popup-overlay" id="request-popup">
                 <div class="form-card popup-box">
                     <div class="section-heading popup-top">
@@ -209,8 +204,8 @@
 
                     <form id="requestForm">
                         <div class="form-group">
-                            <label for="requestTitle">Needed Item Name *</label>
-                            <input type="text" id="requestTitle" placeholder="e.g., T-Square Ruler or Lab Gown" required>
+                            <label for="requestTitle">Needed Item *</label>
+                            <input type="text" id="requestTitle" placeholder="e.g., Scientific Calculator or Lab Coat" required>
                         </div>
 
                         <div class="form-group">
@@ -226,7 +221,7 @@
 
                         <div class="form-group">
                             <label for="requesterName">Name + Year & Section *</label>
-                            <input type="text" id="requesterName" placeholder="e.g., Maria Santos - BSIT 1B" required>
+                            <input type="text" id="requesterName" placeholder="e.g., Maria Santos - BSN 1B" required>
                         </div>
 
                         <div class="form-group">
@@ -255,16 +250,13 @@
 
     </main>
 
-
-    <!-- FOOTER -->
-    <footer class="footer">
+<footer class="footer">
         <div class="container footer-content">
             <p>© 2026 HiraHub. All rights reserved.</p>
-            
+
         </div>
     </footer>
 
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

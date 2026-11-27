@@ -1,4 +1,4 @@
-/* GENERAL SETTINGS */
+
 
 :root {
     --primary-900: #12352f;
@@ -50,9 +50,6 @@ input {
     margin: 0 auto;
 }
 
-
-/* HEADER AND NAVIGATION */
-
 .header {
     position: sticky;
     top: 0;
@@ -82,13 +79,11 @@ input {
 .logo-img {
     width: 49px;
     height: 48px;
-    margin: -8px 0; 
+    margin: -8px 0;
     display: block;
     object-fit: contain;
     flex-shrink: 0;
 }
-
-
 
 .logo-blue {
     color: var(--primary-600);
@@ -119,7 +114,6 @@ input {
     gap: 8px;
 }
 
-/* 1. COMPACT SOFT-RECTANGLE SEARCH BAR (32px height) */
 .search-bar.nav-search {
     width: 215px;
     max-width: 100%;
@@ -154,7 +148,6 @@ input {
     padding: 0;
 }
 
-/* 2. COMPACT SOFT-RECTANGLE DARK MODE TOGGLE (32px height) */
 .theme-switch {
     position: relative;
     display: inline-block;
@@ -212,7 +205,6 @@ input {
     background-color: var(--primary-400);
 }
 
-/* 3. COMPACT SOFT-RECTANGLE SIGN IN BUTTON (32px height) */
 .sign-in-button {
     display: inline-flex;
     align-items: center;
@@ -233,9 +225,6 @@ input {
     background: var(--primary-800);
     transform: translateY(-1px);
 }
-
-
-/* HERO SECTION */
 
 .hero {
     min-height: 420px;
@@ -272,9 +261,6 @@ input {
     color: var(--text-muted);
     font-size: 19px;
 }
-
-
-/* SEARCH BAR */
 
 .search-bar {
     max-width: 590px;
@@ -313,9 +299,6 @@ input {
     font-size: 22px;
 }
 
-
-/* HERO BUTTONS */
-
 .hero-buttons {
     display: flex;
     flex-wrap: wrap;
@@ -349,9 +332,6 @@ input {
     border: 1px solid var(--primary-800);
     background: var(--surface);
 }
-
-
-/* HERO ILLUSTRATION */
 
 .hero-art {
     min-height: 330px;
@@ -439,9 +419,6 @@ input {
     transform: rotate(9deg);
 }
 
-
-/* SECTION HEADINGS */
-
 .section {
     padding-top: 15px;
     padding-bottom: 20px;
@@ -464,10 +441,6 @@ input {
     border-radius: 5px;
     background: var(--primary-600);
 }
-
-
-
-/* CATEGORY CARDS */
 
 .category-grid {
     display: grid;
@@ -500,16 +473,12 @@ input {
     font-weight: 700;
 }
 
-
-/* MATERIAL CARDS */
-
 .content-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
     gap: 12px;
     align-items: stretch;
 }
-
 
 .material-card {
     min-height: 135px;
@@ -553,11 +522,6 @@ input {
     font-size: 12px;
     font-weight: 700;
 }
-
-
-
-/* PRINTING SERVICES BANNER */
-
 
 .service-banner {
     min-height: 135px;
@@ -609,9 +573,6 @@ input {
     transform: rotate(10deg);
 }
 
-
-/* FOOTER */
-
 .footer {
     margin-top: 25px;
     padding: 20px 0;
@@ -632,9 +593,6 @@ input {
     color: var(--danger);
 }
 
-
-/* FLOATING ASSISTANT BUTTON */
-
 .assistant-button {
     position: fixed;
     right: 25px;
@@ -651,9 +609,6 @@ input {
     box-shadow: 0 5px 18px rgba(18, 53, 47, 0.2);
     font-size: 30px;
 }
-
-
-/* ASSISTANT CHAT BOX */
 
 .assistant-box {
     position: fixed;
@@ -744,9 +699,6 @@ input {
     cursor: pointer;
 }
 
-
-/* HIDDEN LABEL */
-
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -755,9 +707,6 @@ input {
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
 }
-
-
-/* TABLET RESPONSIVENESS */
 
 @media (max-width: 900px) {
 
@@ -778,9 +727,6 @@ input {
     }
 
 }
-
-
-/* MOBILE RESPONSIVENESS */
 
 @media (max-width: 650px) {
 
@@ -871,8 +817,6 @@ input {
 
 }
 
-
-/* DARK MODE */
 body.dark-mode {
     --surface: #111c19;
     --surface-soft: #172520;
@@ -980,14 +924,10 @@ body.dark-mode .suggestion-list span {
     border-color: var(--border);
 }
 
-
-/* NAVIGATION SCROLL FIX */
 section {
     scroll-margin-top: 100px;
 }
 
-
-/* ASSISTANT VISIBILITY */
 .assistant-box {
     display: none;
 }

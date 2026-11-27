@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    <!-- HEADER -->
+    <!-- header & navbar -->
     <header class="header">
         <nav class="navbar container">
 
@@ -36,12 +36,12 @@
                     <button type="submit">⌕</button>
                 </form>
 
-                <!-- POST BUTTON IN NAVBAR -->
+                <!-- post button -->
                 <button type="button" class="button button-primary nav-post-btn" id="openPostModal">
                     + Post
                 </button>
 
-
+                <!-- dark mode toggle -->
                 <label class="theme-switch" for="themeToggle" aria-label="Toggle dark mode">
                     <input type="checkbox" id="themeToggle">
                     <span class="slider">
@@ -59,8 +59,7 @@
         </nav>
     </header>
 
-
-    <!-- MAIN CONTENT -->
+<!-- main content -->
     <main>
         <section class="section container">
 
@@ -73,11 +72,10 @@
                 Offer everyday help or post a service request for fellow students.
             </p>
 
-
-            <!-- TEXT-ONLY SERVICE POSTINGS (OFFERS & REQUESTS) -->
+<!-- service posts feed -->
             <div class="service-feed">
 
-                <!-- OFFER POST -->
+                <!-- offer post -->
                 <article class="service-post">
                     <div class="service-post-header">
                         <div class="post-title-group">
@@ -87,7 +85,7 @@
                         <span class="availability">Available Today</span>
                     </div>
                     <p>
-                        Quick printing for handouts, reviewers, and school forms. 
+                        Quick printing for handouts, reviewers, and school forms.
                         Can meet at the main gate or library before 8:00 AM classes.
                     </p>
                     <div class="service-post-footer">
@@ -96,8 +94,7 @@
                     </div>
                 </article>
 
-
-                <!-- REQUEST POST -->
+<!-- request post -->
                 <article class="service-post">
                     <div class="service-post-header">
                         <div class="post-title-group">
@@ -107,7 +104,7 @@
                         <span class="availability">Urgent</span>
                     </div>
                     <p>
-                        Already have all the text and images ready—just need someone to arrange 
+                        Already have all the text and images ready—just need someone to arrange
                         them into a neat, readable presentation layout for our afternoon report.
                     </p>
                     <div class="service-post-footer">
@@ -116,8 +113,7 @@
                     </div>
                 </article>
 
-
-                <!-- OFFER POST -->
+<!-- offer post -->
                 <article class="service-post">
                     <div class="service-post-header">
                         <div class="post-title-group">
@@ -127,7 +123,7 @@
                         <span class="availability">Available</span>
                     </div>
                     <p>
-                        I can fix messy Word margins, add automatic page numbers and table of contents, 
+                        I can fix messy Word margins, add automatic page numbers and table of contents,
                         or combine and compress scanned PDFs for LMS uploads.
                     </p>
                     <div class="service-post-footer">
@@ -136,8 +132,7 @@
                     </div>
                 </article>
 
-
-                <!-- REQUEST POST -->
+<!-- request post -->
                 <article class="service-post">
                     <div class="service-post-header">
                         <div class="post-title-group">
@@ -147,7 +142,7 @@
                         <span class="availability">Open</span>
                     </div>
                     <p>
-                        Looking for someone who can change my photo background to white and print 
+                        Looking for someone who can change my photo background to white and print
                         4 copies of 2x2 ID pictures for clearance forms tomorrow morning.
                     </p>
                     <div class="service-post-footer">
@@ -161,15 +156,14 @@
         </section>
     </main>
 
-
-    <!-- FOOTER -->
+<!-- footer -->
     <footer class="footer">
         <div class="container footer-content">
             <p>© 2026 HiraHub. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- POST SERVICE / REQUEST MODAL -->
+<!-- post modal -->
     <div class="modal-overlay" id="postModal">
         <div class="modal-box">
             <div class="modal-header">
@@ -194,7 +188,7 @@
                 <input type="text" id="postMeta" placeholder="e.g., Alex M. • Main Library / Online" required>
 
                 <label>Contact Link (Messenger, IG, or Email)</label>
-                <input type="url" id="postContact" placeholder="https://m.meyourname or mailto:you@email.com" required>
+                <input type="url" id="postContact" placeholder="https://m.me or mailto:you@email.com" required>
 
                 <button type="submit" class="button button-primary" style="width: 100%;">
                     Publish Post
@@ -203,8 +197,7 @@
         </div>
     </div>
 
-
-    <!-- JAVASCRIPT -->
+<!-- js file -->
     <script src="script.js"></script>
 
 </body>

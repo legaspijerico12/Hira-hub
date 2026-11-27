@@ -1,6 +1,4 @@
-/* ==============================
-   DARK MODE
-================================= */
+
 
 const themeButton = document.getElementById("themeToggle");
 
@@ -13,11 +11,6 @@ if (themeButton) {
     });
 
 }
-
-
-/* ==============================
-   SEARCH BAR
-================================= */
 
 const searchForm = document.querySelector(".search-bar");
 const searchInput = searchForm.querySelector("input");
@@ -36,17 +29,9 @@ searchForm.addEventListener("submit", function(event) {
 
 });
 
-
-/* ==============================
-   HIRAHUB ASSISTANT
-================================= */
-
 const assistantButton = document.querySelector(".assistant-button");
 const assistantBox = document.querySelector(".assistant-box");
 const assistantClose = document.querySelector(".assistant-header a");
-
-
-/* Open Assistant */
 
 assistantButton.addEventListener("click", function(event) {
 
@@ -56,9 +41,6 @@ assistantButton.addEventListener("click", function(event) {
 
 });
 
-
-/* Close Assistant */
-
 assistantClose.addEventListener("click", function(event) {
 
     event.preventDefault();
@@ -66,11 +48,6 @@ assistantClose.addEventListener("click", function(event) {
     assistantBox.classList.remove("assistant-open");
 
 });
-
-
-/* ==============================
-   ASSISTANT SUGGESTIONS
-================================= */
 
 const suggestions = document.querySelectorAll(".suggestion-list span");
 
@@ -85,11 +62,6 @@ suggestions.forEach(function(suggestion) {
     });
 
 });
-
-
-/* ==============================
-   ASSISTANT SEND BUTTON
-================================= */
 
 const assistantInput = document.querySelector(".assistant-input input");
 const assistantSend = document.querySelector(".assistant-input button");
@@ -107,9 +79,6 @@ assistantSend.addEventListener("click", function() {
 
 });
 
-
-/* SEND MESSAGE USING ENTER */
-
 assistantInput.addEventListener("keypress", function(event) {
 
     if (event.key === "Enter") {
@@ -117,11 +86,6 @@ assistantInput.addEventListener("keypress", function(event) {
     }
 
 });
-
-
-/* ==============================
-   SMOOTH NAVIGATION
-================================= */
 
 const navigationLinks = document.querySelectorAll('a[href^="#"]');
 
@@ -149,11 +113,6 @@ navigationLinks.forEach(function(link) {
     });
 
 });
-
-
-/* ==============================
-   CATEGORY BUTTONS
-================================= */
 
 const categoryCards = document.querySelectorAll(".category-card");
 

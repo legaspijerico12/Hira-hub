@@ -1,7 +1,4 @@
-/* ==============================
-   DARK MODE
-================================= */
-
+// dark mode toggle
 const themeButton = document.getElementById("themeToggle");
 
 if (themeButton) {
@@ -10,17 +7,12 @@ if (themeButton) {
     });
 }
 
-
-/* ==============================
-   SEARCH BAR (WITH LIVE SERVICES FILTER)
-================================= */
-
+// search bar & live filter for services
 const searchForm = document.querySelector(".search-bar");
 
 if (searchForm) {
     const searchInput = searchForm.querySelector("input");
 
-    /* Live filter if on Services page */
     searchInput.addEventListener("input", function() {
         const query = searchInput.value.toLowerCase().trim();
         const servicePosts = document.querySelectorAll(".service-post");
@@ -49,11 +41,7 @@ if (searchForm) {
     });
 }
 
-
-/* ==============================
-   SMOOTH NAVIGATION
-================================= */
-
+// smooth scroll for anchor links
 const navigationLinks = document.querySelectorAll('a[href^="#"]');
 
 navigationLinks.forEach(function(link) {
@@ -77,11 +65,7 @@ navigationLinks.forEach(function(link) {
     });
 });
 
-
-/* ==============================
-   POST & REQUEST POPUPS (BROWSE)
-================================= */
-
+// open & close popups on browse page
 const postBtn = document.querySelector(".post-material-btn");
 const requestBtn = document.querySelector(".request-material-btn");
 const sharePopup = document.getElementById("share-popup");
@@ -115,11 +99,7 @@ if (closeRequestBtn) {
     });
 }
 
-
-/* ==============================
-   CREATE & DISPLAY POSTED CARDS (BROWSE)
-================================= */
-
+// browse page category filter setup
 const shareForm = document.getElementById("shareForm");
 const requestForm = document.getElementById("requestForm");
 const materialsGrid = document.getElementById("materialsGrid");
@@ -133,6 +113,7 @@ const materialCategoryOptions = Array.from(
 });
 let selectedCategory = null;
 
+// read category from url if coming from home page
 const requestedCategory = new URLSearchParams(window.location.search).get("category");
 if (requestedCategory) {
     selectedCategory = materialCategoryOptions.find(function(category) {
@@ -145,6 +126,7 @@ if (selectedCategory) {
     document.getElementById("requestCategory").value = selectedCategory;
 }
 
+// show only posts in the selected category
 function applyBrowseCategoryFilter() {
     [
         {
@@ -216,6 +198,7 @@ function applyBrowseCategoryFilter() {
     }
 }
 
+// update url when switching categories
 function setBrowseCategory(category) {
     selectedCategory = category;
 
@@ -238,7 +221,7 @@ document.querySelectorAll("#browse .category-grid .category-card[data-category]"
     });
 });
 
-/* POST MATERIAL SUBMIT */
+// submit new material post
 if (shareForm && materialsGrid) {
     shareForm.addEventListener("submit", function(event) {
         event.preventDefault();
@@ -250,14 +233,12 @@ if (shareForm && materialsGrid) {
         const contact = document.getElementById("contactLink").value;
         const imageInput = document.getElementById("materialImage");
 
-        /* Check if user uploaded a photo */
         let imageHTML = "📦";
         if (imageInput.files.length > 0) {
             const imageURL = URL.createObjectURL(imageInput.files[0]);
             imageHTML = `<img src="${imageURL}" alt="${title}">`;
         }
 
-        /* Create new card */
         const newCard = document.createElement("article");
         newCard.className = "material-card";
         newCard.dataset.category = category;
@@ -284,7 +265,7 @@ if (shareForm && materialsGrid) {
     });
 }
 
-/* REQUEST MATERIAL SUBMIT */
+// submit new material request
 if (requestForm && requestsGrid) {
     requestForm.addEventListener("submit", function(event) {
         event.preventDefault();
@@ -296,14 +277,12 @@ if (requestForm && requestsGrid) {
         const contact = document.getElementById("requestContactLink").value;
         const imageInput = document.getElementById("requestImage");
 
-        /* Check if user uploaded a reference photo */
         let imageHTML = "🙋";
         if (imageInput.files.length > 0) {
             const imageURL = URL.createObjectURL(imageInput.files[0]);
             imageHTML = `<img src="${imageURL}" alt="${title}">`;
         }
 
-        /* Create new request card */
         const newRequest = document.createElement("article");
         newRequest.className = "material-card";
         newRequest.dataset.category = category;
@@ -330,11 +309,7 @@ if (requestForm && requestsGrid) {
     });
 }
 
-
-/* ==============================
-   SERVICES POST & REQUEST MODAL
-================================= */
-
+// services page modal & post creation
 const openPostBtn = document.getElementById("openPostModal");
 const closePostBtn = document.getElementById("closePostModal");
 const postModal = document.getElementById("postModal");
@@ -405,11 +380,7 @@ if (servicePostForm && serviceFeed) {
     });
 }
 
-/* ==============================
-   AUTO-FILTER BROWSE BY CATEGORY
-================================= */
-
+// apply category filter when browse page loads
 if (materialsGrid) {
     applyBrowseCategoryFilter();
 }
-

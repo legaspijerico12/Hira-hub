@@ -1,5 +1,3 @@
-/* GENERAL SETTINGS */
-
 :root {
     --primary-900: #12352f;
     --primary-800: #174b43;
@@ -49,9 +47,6 @@ input {
     margin: 0 auto;
 }
 
-
-/* HEADER AND NAVIGATION */
-
 .header {
     position: sticky;
     top: 0;
@@ -81,7 +76,7 @@ input {
 .logo-img {
     width: 49px;
     height: 48px;
-    margin: -8px 0; 
+    margin: -8px 0;
     display: block;
     object-fit: contain;
     flex-shrink: 0;
@@ -116,7 +111,6 @@ input {
     gap: 8px;
 }
 
-/* 1. COMPACT SOFT-RECTANGLE SEARCH BAR (32px height) */
 .search-bar.nav-search {
     width: 215px;
     max-width: 100%;
@@ -151,7 +145,6 @@ input {
     padding: 0;
 }
 
-/* 2. COMPACT SOFT-RECTANGLE DARK MODE TOGGLE (32px height) */
 .theme-switch {
     position: relative;
     display: inline-block;
@@ -209,7 +202,6 @@ input {
     background-color: var(--primary-400);
 }
 
-/* 3. COMPACT SOFT-RECTANGLE SIGN IN BUTTON (32px height) */
 .sign-in-button {
     display: inline-flex;
     align-items: center;
@@ -230,9 +222,6 @@ input {
     background: var(--primary-800);
     transform: translateY(-1px);
 }
-
-
-/* HERO SECTION */
 
 .hero {
     min-height: 420px;
@@ -270,9 +259,6 @@ input {
     font-size: 19px;
 }
 
-
-/* SEARCH BAR */
-
 .search-bar {
     max-width: 590px;
     display: flex;
@@ -304,9 +290,6 @@ input {
     cursor: pointer;
     font-size: 22px;
 }
-
-
-/* HERO BUTTONS */
 
 .hero-buttons {
     display: flex;
@@ -342,9 +325,6 @@ input {
     background: var(--surface);
 }
 
-
-/* HERO ILLUSTRATION */
-
 .hero-art {
     min-height: 330px;
     display: flex;
@@ -354,14 +334,11 @@ input {
 
 .hero-custom-img {
     width: 100%;
-    max-width: 900px; /* Change this to make your image wider or narrower */
-    max-height: 550px; /* Keeps it aligned nicely with the hero height */
+    max-width: 900px;
+    max-height: 550px;
     height: auto;
     object-fit: contain;
 }
-
-
-/* SECTION HEADINGS */
 
 .section {
     padding-top: 15px;
@@ -409,9 +386,6 @@ input {
     background: var(--primary-600);
 }
 
-
-/* CATEGORY CARDS */
-
 .category-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -449,17 +423,12 @@ input {
     object-fit: contain;
 }
 
-
-
-/* MATERIAL CARDS */
-
 .content-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
     gap: 12px;
     align-items: stretch;
 }
-
 
 .material-card {
     min-height: 135px;
@@ -503,11 +472,6 @@ input {
     font-size: 12px;
     font-weight: 700;
 }
-
-
-
-/* PRINTING SERVICES BANNER */
-
 
 .service-banner {
     min-height: 135px;
@@ -559,9 +523,6 @@ input {
     transform: rotate(10deg);
 }
 
-
-/* FOOTER */
-
 .footer {
     margin-top: 25px;
     padding: 20px 0;
@@ -576,8 +537,6 @@ input {
     color: var(--primary-800);
     font-size: 13px;
 }
-
-/* TABLET RESPONSIVENESS */
 
 @media (max-width: 900px) {
 
@@ -598,9 +557,6 @@ input {
     }
 
 }
-
-
-/* MOBILE RESPONSIVENESS */
 
 @media (max-width: 650px) {
 
@@ -676,8 +632,6 @@ input {
 
 }
 
-
-/* DARK MODE */
 body.dark-mode {
     --surface: #111c19;
     --surface-soft: #172520;
@@ -761,12 +715,9 @@ body.dark-mode .footer-content {
     color: var(--text);
 }
 
-/* NAVIGATION SCROLL FIX */
 section {
     scroll-margin-top: 100px;
 }
-
-/* NAVBAR POST & REQUEST BUTTONS */
 
 .post-material-btn,
 .request-material-btn {
@@ -804,13 +755,6 @@ section {
     transform: translateY(-1px);
 }
 
-
-/* SHARE & REQUEST SIDE-BY-SIDE FORMS */
-
-
-
-/* POPUP OVERLAY (HIDDEN UNTIL CLICKED) */
-
 .popup-overlay {
     display: none;
     position: fixed;
@@ -845,9 +789,6 @@ section {
     color: var(--text-muted);
     cursor: pointer;
 }
-
-
-/* FORM CARD & INPUT STYLING */
 
 .form-card {
     padding: 24px;
@@ -900,9 +841,6 @@ section {
     border: 1px solid var(--primary-800);
 }
 
-
-/* DARK MODE SUPPORT FOR POPUPS */
-
 body.dark-mode .form-card {
     background: #172520;
     border-color: var(--border);
@@ -914,8 +852,6 @@ body.dark-mode .form-group select {
     border-color: var(--border);
     color: var(--text);
 }
-
-/* FILE UPLOAD INPUT STYLING */
 
 .form-group input[type="file"] {
     padding: 7px 10px;
@@ -938,8 +874,6 @@ body.dark-mode .form-group select {
 .form-group input[type="file"]::file-selector-button:hover {
     background: var(--primary-800);
 }
-
-/* EMPTY LIST MESSAGE & CARD PHOTOS */
 
 .empty-message {
     color: var(--text-muted);
@@ -984,7 +918,6 @@ body.dark-mode .form-group select {
     overflow-y: auto;
 }
 
-/* Dashboard Header Alignment */
 .dashboard-top {
     display: flex;
     justify-content: space-between;
@@ -998,14 +931,12 @@ body.dark-mode .form-group select {
     margin-bottom: 0;
 }
 
-/* Fix 3-Column Card Grid */
 .dashboard-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
 }
 
-/* Text-Only Service Feed */
 .service-feed {
     display: flex;
     flex-direction: column;
@@ -1057,15 +988,13 @@ body.dark-mode .form-group select {
     opacity: 0.75;
 }
 
-
-/* Compact Navbar Post Button */
 .nav-post-btn {
-    padding: 0.45rem 0.9rem;
-    font-size: 0.9rem;
+    height: 32px;
+    padding: 0 12px;
+    font-size: 13px;
     white-space: nowrap;
 }
 
-/* Post Title + Type Badge Grouping */
 .post-title-group {
     display: flex;
     align-items: center;
@@ -1092,8 +1021,6 @@ body.dark-mode .form-group select {
     color: #b45309;
 }
 
-
-/* Responsive Stack on Mobile */
 @media (max-width: 900px) {
     .dashboard-grid {
         grid-template-columns: 1fr;
@@ -1109,11 +1036,6 @@ body.dark-mode .form-group select {
 .card-link:hover {
     transform: translateY(-3px);
 }
-
-
-/* ==============================
-   SERVICES POST MODAL
-================================= */
 
 .modal-overlay {
     display: none;
@@ -1141,7 +1063,6 @@ body.dark-mode .form-group select {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* Dark Mode Support for Modal */
 body.dark-mode .modal-box {
     background: #1e293b;
     color: #f8fafc;
@@ -1199,10 +1120,6 @@ body.dark-mode .modal-form textarea {
     border-color: #475569;
     background: #0f172a;
 }
-
-/* ==============================
-   LOGIN / GUEST PAGE
-================================= */
 
 .auth-section {
     display: flex;
@@ -1302,10 +1219,6 @@ body.dark-mode .auth-form input {
     background: #0f172a;
 }
 
-/* ==============================
-   BROWSE MATERIAL CARDS POLISH
-================================= */
-
 .material-card {
     display: flex;
     align-items: center;
@@ -1333,7 +1246,7 @@ body.dark-mode .auth-form input {
 
 .material-info {
     flex: 1;
-    min-width: 0; /* Prevents long text from overflowing */
+    min-width: 0;
     display: flex;
     flex-direction: column;
     gap: 0.35rem;
@@ -1354,7 +1267,6 @@ body.dark-mode .auth-form input {
     line-height: 1.3;
 }
 
-/* Fix Squished Badge & Button Row */
 .card-actions {
     display: flex;
     align-items: center;
@@ -1382,7 +1294,6 @@ body.dark-mode .auth-form input {
     gap: 0.25rem;
 }
 
-/* Category Filter Reset Pill */
 .filtered-heading {
     display: flex;
     align-items: center;
