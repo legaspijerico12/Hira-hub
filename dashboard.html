@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Dashboard | HiraHub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="HiraHub Icon" class="logo-img">
+                <span>Hira<span class="logo-blue">Hub</span></span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="browse.html">Browse</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="dashboard.html" class="active">My Dashboard</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <form class="search-bar nav-search" action="#" method="get">
+                    <input
+                        type="search"
+                        name="search"
+                        placeholder="Search calculators, books..."
+                    >
+                    <button type="submit">⌕</button>
+                </form>
+
+                <label class="theme-switch" for="themeToggle" aria-label="Toggle dark mode">
+                    <input type="checkbox" id="themeToggle">
+                    <span class="slider">
+                        <svg class="moon-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </span>
+                </label>
+
+                <a href="login.html" class="sign-in-button">
+                    Sign In
+                </a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- DASHBOARD CONTENT -->
+    <main>
+
+        <section class="section container">
+
+            <!-- TOP HEADER -->
+            <div class="dashboard-top">
+                <div>
+                    <div class="section-heading">
+                        <h2>My Dashboard</h2>
+                        <span class="heading-line"></span>
+                    </div>
+
+                    <p class="hero-description">
+                        Manage your shared materials, requests, and activities.
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- WELCOME BANNER -->
+            <div class="service-banner">
+
+                <div class="service-text">
+                    <h2>Welcome to HiraHub!</h2>
+
+                    <p>
+                        Keep track of your materials and
+                        student sharing activities in one place.
+                    </p>
+
+                    <a href="browse.html" class="button button-dark">
+                        Browse Materials →
+                    </a>
+                </div>
+
+        
+
+            </div>
+
+
+            <!-- DASHBOARD CARDS (3-COLUMN) -->
+            <div class="section-heading">
+                <h2>My Activities</h2>
+                <span class="heading-line"></span>
+            </div>
+
+            <div class="dashboard-grid">
+
+                <a href="browse.html" class="material-card card-link">
+                    <div class="product-image">
+                        📦
+                    </div>
+
+                    <div class="material-info">
+                        <h3>My Shared Items</h3>
+                        <p>Materials you have shared with other students.</p>
+                        <span class="availability">0 Items</span>
+                    </div>
+                </a>
+
+
+                <a href="browse.html" class="material-card card-link">
+                    <div class="product-image">
+                        📋
+                    </div>
+
+                    <div class="material-info">
+                        <h3>My Borrow Requests</h3>
+                        <p>Check the materials you requested to borrow.</p>
+                        <span class="availability">0 Requests</span>
+                    </div>
+                </a>
+
+
+                <a href="services.html" class="material-card card-link">
+                    <div class="product-image">
+                        🖨️
+                    </div>
+
+                    <div class="material-info">
+                        <h3>My Service Requests</h3>
+                        <p>View your requested student services.</p>
+                        <span class="availability">0 Requests</span>
+                    </div>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>© 2026 HiraHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
